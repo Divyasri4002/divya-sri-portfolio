@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya Sri Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background: url('bsc.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        header h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .skill {
+            flex: 1 1 30%;
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .skill:hover {
+            transform: scale(1.05);
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project {
+            flex: 1 1 45%;
+            margin: 10px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .achievements {
+            text-align: center;
+            padding: 20px;
+            background: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        .achievements ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .achievements li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        header, .section {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home">
+        <h1>Divya Sri</h1>
+        <p>Aspiring Data Analyst</p>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <div class="section about" id="about">
+            <h2>About Me</h2>
+            <img src="pr.jpg" alt="Divya Sri">
+            <p>I am an AI and data enthusiast currently pursuing a Bachelor's degree in Artificial Intelligence. My journey combines technical expertise, creativity, and problem-solving. Alongside my academic background, I have hands-on experience with tools like Python, Tableau, and Power BI, which allow me to translate raw data into actionable insights. I enjoy tackling real-world challenges, whether it’s developing IoT-based smart farming systems, optimizing manufacturing processes, or creating eco-friendly solutions.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section skills" id="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skill">Python & Machine Learning</div>
+            <div class="skill">Data Visualization (Tableau & Power BI)</div>
+            <div class="skill">Web Development</div>
+            <div class="skill">Creative Problem-Solving</div>
+            <div class="skill">IoT Applications</div>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="section achievements" id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>First Prize in Essay Writing Competition on Voter Awareness</li>
+                <li>Certificate of Appreciation in Vultr Cloud Innovate Hackathon (Eco Power)</li>
+                <li>Google Cloud Badges in Generative AI & Responsible AI</li>
+                <li>HackerRank Python (Basic) Certification</li>
+                <li>Participated in TECHFINIX '24 Symposium (Food Technology)</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section projects" id="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <img src="Screenshot (135).png" alt="Project 1">
+                <h3>Eco-Power</h3>
+                <p>
+                    The Eco-Power project focuses on developing a solar-powered biocatalytic purifier that converts harmful industrial and vehicular emissions 
+                    into sustainable byproducts. The solution aims to reduce environmental pollution while producing renewable energy. It integrates 
+                    Vultr Cloud services for real-time data analytics and system monitoring, offering scalability for future deployment in various industries.
+                    <strong>Status: In Progress</strong>
+                </p> 
+                <h4>Architecture Diagram</h4>
+        <img src="Screenshot (136).png" alt="Eco-Power Architecture Diagram" style="width: 100%; border-radius: 10px; margin-top: 20px;">
+        <p style="text-align: center; margin-top: 10px;">This diagram illustrates the architecture of the Eco-Power system, showcasing the integration of solar energy, biocatalytic filtration, and real-time data analytics using Vultr Cloud services.</p>          
+            </div>
+            <div class="project">
+                <img src="1.png" alt="Healthcare Project">
+                <h3>AI-Powered Mobile Health Platform</h3>
+                <p>
+                    Developed an AI-powered mobile health platform for rural areas, integrating offline-first design with IoT-enabled health devices.
+                    The platform provides real-time health predictions using TensorFlow Lite, Bluetooth Low Energy (BLE) for continuous monitoring,
+                    and end-to-end encryption for security. Aimed at improving patient care outcomes and scalability in underserved regions.
+                </p>
+                <h4>Wireframes</h4>
+        <img src="Wireframes.png" alt="AI Health Platform Wireframes" style="width: 100%; border-radius: 10px; margin-top: 20px;">
+        <p style="text-align: center; margin-top: 10px;">These wireframes display the user interface design for the mobile health platform, highlighting key features such as health monitoring, data visualization, and patient profiles.</p>
+            </div>
+            
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section contact" id="contact">
+            <h2>Contact</h2>
+            <p>Email: dhivyasri2124@gmail.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Location: Dindigul, Tamil Nadu</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Divya Sri. All rights reserved.</p>
+    </footer>
+</body>
+</html>
